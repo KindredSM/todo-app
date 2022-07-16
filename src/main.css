@@ -1,16 +1,16 @@
 :root {
-  --primary: #ea40a4;
-  --business: #3a82ee;
+  --primary: #0095ff;
+  --productivity: #ff00cc;
   --personal: var(--primary);
   --light: #eee;
   --grey: #888;
   --dark: #313154;
-  --danger: #ff5b57;
+  --delete: #ff4c49;
 
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-  --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-  --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+  --productivity-glow: 0px 0px 4px rgba(245, 12, 148, 0.75);
+  --personal-glow: 0px 0px 4px rgba(0, 128, 255, 0.75);
 }
 
 * {
@@ -115,8 +115,8 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid var(--business);
-  box-shadow: var(--business-glow);
+  border: 2px solid var(--productivity);
+  box-shadow: var(--productivity-glow);
 }
 
 .bubble.personal {
@@ -130,8 +130,8 @@ input[type="checkbox"] {
   opacity: 0;
   width: 0px;
   height: 0px;
-  background-color: var(--business);
-  box-shadow: var(--business-glow);
+  background-color: var(--productivity);
+  box-shadow: var(--productivity-glow);
   border-radius: 50%;
   transition: 0.2s ease-in-out;
 }
@@ -223,7 +223,7 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .actions .delete {
-  background-color: var(--danger);
+  background-color: var(--delete);
 }
 
 .todo-item.done .todo-content input {
